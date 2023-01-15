@@ -7,7 +7,16 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 @MappedSuperclass
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public abstract class base {
 	
 	@Id
@@ -25,48 +34,5 @@ public abstract class base {
 	
 	@Column(name = "modifiedBy")
 	private Long modifiedBy;
-	
-	public base() {
-		super();
-	}
-	
-	public base(Long id, Date createDate, Long createBy, Date modifiedDate, Long modifiedBy) {
-		super();
-		this.id = id;
-		this.createDate = createDate;
-		this.createBy = createBy;
-		this.modifiedDate = modifiedDate;
-		this.modifiedBy = modifiedBy;
-	}
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	public Date getCreateDate() {
-		return createDate;
-	}
-	public void setCreateDate(Date createDate) {
-		this.createDate = createDate;
-	}
-	public Long getCreateBy() {
-		return createBy;
-	}
-	public void setCreateBy(Long createBy) {
-		this.createBy = createBy;
-	}
-	public Date getModifiedDate() {
-		return modifiedDate;
-	}
-	public void setModifiedDate(Date modifiedDate) {
-		this.modifiedDate = modifiedDate;
-	}
-	public Long getModifiedBy() {
-		return modifiedBy;
-	}
-	public void setModifiedBy(Long modifiedBy) {
-		this.modifiedBy = modifiedBy;
-	}
 	
 }

@@ -22,8 +22,8 @@ public class user extends base {
 	private String fullName;
 	private String email;
 	private String phone;
-	private String university;
-	private String faculty;
+	private Long university;
+	private Long faculty;
 	private String facebook;
 	private String zalo;
 	private String telegram;

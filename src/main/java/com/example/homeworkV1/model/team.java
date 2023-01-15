@@ -1,10 +1,21 @@
 package com.example.homeworkV1.model;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 @Entity
 @Table(name = "team")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class team extends base {
 
 	private String name;
@@ -12,58 +23,5 @@ public class team extends base {
 	private String content;
 	private String avata;
 	private int status;
-	
-	public team() {
-		super();
-	}
-
-	public team(String name, int size, String content, String avata, int status) {
-		super();
-		this.name = name;
-		this.size = size;
-		this.content = content;
-		this.avata = avata;
-		this.status = status;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public int getSize() {
-		return size;
-	}
-
-	public void setSize(int size) {
-		this.size = size;
-	}
-
-	public String getContent() {
-		return content;
-	}
-
-	public void setContent(String content) {
-		this.content = content;
-	}
-
-	public String getAvata() {
-		return avata;
-	}
-
-	public void setAvata(String avata) {
-		this.avata = avata;
-	}
-
-	public int getStatus() {
-		return status;
-	}
-
-	public void setStatus(int status) {
-		this.status = status;
-	}
 	
 }

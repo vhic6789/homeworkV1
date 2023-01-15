@@ -1,10 +1,21 @@
 package com.example.homeworkV1.model;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 @Entity
 @Table(name = "userdetails")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class userdetails extends base {
 
 	private Long userId;
@@ -14,77 +25,5 @@ public class userdetails extends base {
 	private int moneyFreeze;
 	private int teamId;
 	private int reputation;
-	
-	public userdetails() {
-		super();
-	}
-
-	public userdetails(Long userId, String nameBank, String numberBank, int money, int moneyFreeze, int teamId,
-			int reputation) {
-		super();
-		this.userId = userId;
-		this.nameBank = nameBank;
-		this.numberBank = numberBank;
-		this.money = money;
-		this.moneyFreeze = moneyFreeze;
-		this.teamId = teamId;
-		this.reputation = reputation;
-	}
-
-	public Long getUserId() {
-		return userId;
-	}
-
-	public void setUserId(Long userId) {
-		this.userId = userId;
-	}
-
-	public String getNameBank() {
-		return nameBank;
-	}
-
-	public void setNameBank(String nameBank) {
-		this.nameBank = nameBank;
-	}
-
-	public String getNumberBank() {
-		return numberBank;
-	}
-
-	public void setNumberBank(String numberBank) {
-		this.numberBank = numberBank;
-	}
-
-	public int getMoney() {
-		return money;
-	}
-
-	public void setMoney(int money) {
-		this.money = money;
-	}
-
-	public int getMoneyFreeze() {
-		return moneyFreeze;
-	}
-
-	public void setMoneyFreeze(int moneyFreeze) {
-		this.moneyFreeze = moneyFreeze;
-	}
-
-	public int getTeamId() {
-		return teamId;
-	}
-
-	public void setTeamId(int teamId) {
-		this.teamId = teamId;
-	}
-
-	public int getReputation() {
-		return reputation;
-	}
-
-	public void setReputation(int reputation) {
-		this.reputation = reputation;
-	}
 	
 }

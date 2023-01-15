@@ -1,29 +1,23 @@
 package com.example.homeworkV1.model;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 @Entity
 @Table(name = "role")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class role extends base {
 
 	private String name;
-
-	public role() {
-		super();
-	}
-
-	public role(String name) {
-		super();
-		this.name = name;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
 	
 }

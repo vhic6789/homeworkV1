@@ -1,49 +1,25 @@
 package com.example.homeworkV1.model;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 @Entity
 @Table(name = "resultproject")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class resultproject extends base {
 
 	private Long projectId;
 	private String value;
 	private int status;
-	
-	public resultproject() {
-		super();
-	}
-
-	public resultproject(Long projectId, String value, int status) {
-		super();
-		this.projectId = projectId;
-		this.value = value;
-		this.status = status;
-	}
-
-	public Long getProjectId() {
-		return projectId;
-	}
-
-	public void setProjectId(Long projectId) {
-		this.projectId = projectId;
-	}
-
-	public String getValue() {
-		return value;
-	}
-
-	public void setValue(String value) {
-		this.value = value;
-	}
-
-	public int getStatus() {
-		return status;
-	}
-
-	public void setStatus(int status) {
-		this.status = status;
-	}
 	
 }

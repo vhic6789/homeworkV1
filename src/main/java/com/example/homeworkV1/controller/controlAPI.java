@@ -8,6 +8,6 @@ public class controlAPI {
 	
 	@GetMapping(path = "/")
 	public String index() {
-		return "test api"; // them vao test
+		return "test api 123"; // them vao test
 	}
 }

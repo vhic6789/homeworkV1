@@ -8,6 +8,7 @@ public class controlAPI {
 	
 	@GetMapping(path = "/")
 	public String index() {
-		return "test api";// nhanh code
+		return "test api";// nhanh code 
+		// test lan 2
 	}
 }

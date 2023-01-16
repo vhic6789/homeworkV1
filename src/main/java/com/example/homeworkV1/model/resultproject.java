@@ -18,7 +18,6 @@ import lombok.Setter;
 @Setter
 public class resultproject extends base {
 
-	private Long projectId;
 	private String value;
 	private int status;
 	

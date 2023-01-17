@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 17, 2023 lúc 04:09 PM
+-- Thời gian đã tạo: Th1 17, 2023 lúc 05:33 PM
 -- Phiên bản máy phục vụ: 10.4.18-MariaDB
 -- Phiên bản PHP: 7.4.16
 
@@ -101,6 +101,7 @@ CREATE TABLE `project` (
   `id` int(11) NOT NULL,
   `title` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `description` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `listImage` text COLLATE utf8_unicode_ci NOT NULL,
   `content` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
   `salary` int(11) NOT NULL,
   `finishTime` datetime NOT NULL,
@@ -117,9 +118,9 @@ CREATE TABLE `project` (
 -- Đang đổ dữ liệu cho bảng `project`
 --
 
-INSERT INTO `project` (`id`, `title`, `description`, `content`, `salary`, `finishTime`, `request`, `result`, `createDate`, `createBy`, `modifiedDate`, `modifiedBy`, `status`) VALUES
-(1, 'cần người làm tl tri', 'làm khoảng 20 trang ạ làm nhanh giúp mình', 'đề tài: Sự tương đồng và khác biệt giữa triết học Nho gia và triết học Đạo gia ở Trung Quốc thời cổ đại', 150000, '2023-01-19 12:00:00', '', 1, '2023-01-17 17:38:52', 2, '2023-01-17 09:26:52', 0, 1),
-(2, 'thuê làm btl csdl', 'làm chi tiết nha, đảm bảo > 8', '.......', 50000, '2023-01-14 18:07:31', '', 5, '2023-01-10 18:07:31', 1, '2023-01-17 12:07:31', 0, 1);
+INSERT INTO `project` (`id`, `title`, `description`, `listImage`, `content`, `salary`, `finishTime`, `request`, `result`, `createDate`, `createBy`, `modifiedDate`, `modifiedBy`, `status`) VALUES
+(1, 'cần người làm tl tri', 'làm khoảng 20 trang ạ làm nhanh giúp mình', '', 'đề tài: Sự tương đồng và khác biệt giữa triết học Nho gia và triết học Đạo gia ở Trung Quốc thời cổ đại', 150000, '2023-01-19 12:00:00', '', 1, '2023-01-17 17:38:52', 2, '2023-01-17 09:26:52', 0, 1),
+(2, 'thuê làm btl csdl', 'làm chi tiết nha, đảm bảo > 8', '', '.......', 50000, '2023-01-14 18:07:31', '', 5, '2023-01-10 18:07:31', 1, '2023-01-17 12:07:31', 0, 1);
 
 -- --------------------------------------------------------
 

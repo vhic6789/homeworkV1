@@ -18,6 +18,7 @@ public class project extends base {
 
 	private String title;
 	private String description;
+	private String listImage;
 	private String content;
 	private int salary;
 	private Date finishTime;

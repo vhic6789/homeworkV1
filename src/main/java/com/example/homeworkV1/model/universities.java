@@ -18,8 +18,9 @@ import lombok.Setter;
 @Setter
 public class universities extends base {
 
-	private String area;
 	private String name;
+	private String code;
+	private String area;
 	private int status;
 	
 }

@@ -18,7 +18,6 @@ import lombok.Setter;
 @Setter
 public class userdetails extends base {
 
-	private Long userId;
 	private String nameBank;
 	private String numberBank;
 	private int money;

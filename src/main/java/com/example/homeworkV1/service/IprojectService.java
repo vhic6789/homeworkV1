@@ -6,4 +6,5 @@ import com.example.homeworkV1.model.project;
 
 public interface IprojectService {
 	public List<project> getAll();
+	public int createProject(project p);
 }

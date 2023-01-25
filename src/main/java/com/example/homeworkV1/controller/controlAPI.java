@@ -5,6 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.homeworkV1.model.project;
@@ -22,10 +23,11 @@ public class controlAPI {
 		return ResponseEntity.ok(projectS.getAll());
 	}
 	
-	@PostMapping(path = "/createProject")
-	public int createProject() {
-		project p = new project();
-		p.setId(1L);
+	@PostMapping(path = "/user/createProject")
+	public int createProject(@RequestBody project p) {
+		//return p;
+		//project p = new project();
+		//p.setId(1L);
 		return projectS.createProject(p);
 	}
 }

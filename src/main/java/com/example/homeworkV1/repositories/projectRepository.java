@@ -7,6 +7,6 @@ import com.example.homeworkV1.model.project;
 
 public interface projectRepository extends JpaRepository<project, Long> {
 	// đếm số project đã tạo ngày hôm nay
-	@Query(value = "SELECT COUNT(id) FROM project WHERE createDate >= ?1 AND id = ?2", nativeQuery=true)
+	@Query(value = "SELECT COUNT(id) FROM project WHERE createDate >= ?1 AND createBy = ?2", nativeQuery=true)
 	public int countProjectNowday(String nowday, Long id);
 }

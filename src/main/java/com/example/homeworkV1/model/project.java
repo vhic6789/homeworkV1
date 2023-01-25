@@ -21,9 +21,9 @@ public class project extends base {
 	private String listImage;
 	private String content;
 	private int salary;
-	private Date finishTime;
+	private String finishTime;
 	private String request;
-	private int result;
-	private int status;
+	private int result =  1;
+	private int status = 1;
 	
 }

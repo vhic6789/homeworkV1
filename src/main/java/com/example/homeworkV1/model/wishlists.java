@@ -21,6 +21,5 @@ public class wishlists extends base {
 	private Long projectId;
 	private int salaryAgreement;
 	private String content;
-	private int result;
-	
+	private int result = 0;
 }

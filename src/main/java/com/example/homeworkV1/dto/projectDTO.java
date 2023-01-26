@@ -15,7 +15,8 @@ public class projectDTO extends AbstractDTO<projectDTO> {
 	private String mota;
 	private String danhsachanh;
 	private String noidung;
-	private String tienluong;
+	private int tienluong;
 	private String thoigianketthuc;
 	private String yeucau;
+	private String ketqua;
 }

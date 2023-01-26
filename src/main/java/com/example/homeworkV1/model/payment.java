@@ -21,7 +21,7 @@ public class payment extends base {
 	private int salary;
 	private Long projectId;
 	private Long recipientId;
-	private int result;
-	private int status;
+	private int result = 1;
+	private int status = 1;
 	
 }
